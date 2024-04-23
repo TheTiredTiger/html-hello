@@ -1,0 +1,50 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    padding-bottom: 50px;
+}
+
+.myHeader {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: "Oleo Script", system-ui;
+}
+
+.picture1, .picture2, .picture3, .picture4 {
+    display: block;
+    margin: auto;
+    width: 400px;
+    margin-top: 50px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.pictureOver {
+    background-color: white;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pictureTitle {
+    width: 80%;
+}
+
+.pictureDate {
+    width: 20%;
+    text-align: right;
+}
+
+section {
+    background-color: white;
+    padding: 10px;
+
+}
+
+img {
+    width: 400px;
+}
