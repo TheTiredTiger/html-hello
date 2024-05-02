@@ -19,16 +19,29 @@
     padding-right: 10px;
 }
 
+.postTitle {
+    width: 80%;
+}
+
+i {
+    font-size: 2vw;
+}
+
 .htmlLogo {
     width: 7%;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-right: 5px;
-    font-size: 20px;
 }
 
-.postTitle {
-    width: 80%;
+.icons {
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.rightSideIcons {
+    width: 87%;
 }
 
 .postOptions, .fa-bookmark {
@@ -37,36 +50,15 @@
     padding-right: 5px;
 }
 
-.postBody {
-    background-color: white;
-    padding: 10px;
-}
-
 .postImage {
     height: 300px;
 }
 
 img {
     width: 500px;
-    height: 300px;
 }
 
-i {
-    font-size: 1.5vw;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.icons {
-    display: flex;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-.rightSideIcons {
-    width: 87%;
-}
-
-.postDecription {
-    text-align: justify;
+.postBody {
+    background-color: white;
+    padding: 10px;
 }
