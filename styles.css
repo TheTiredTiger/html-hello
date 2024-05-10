@@ -1,0 +1,14 @@
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-top: 3em;
+    }
+
+.card-title {
+    width: 90%;
+}
+
+.card-date {
+    text-align: right;
+    width: 10%;
+}

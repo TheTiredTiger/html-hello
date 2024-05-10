@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+
+       <!--HEADER W/BUTTON & DROPDOWN-->   
+       <nav class="navbar bg-body-tertiary px-3">
+        <div class="d-flex">
+          <i class="fa-brands fa-instagram align-self-center pe-1 fs-3 text"></i>
+          <a class="navbar-brand">Instagram</a>
+        </div>
+        <form class="d-flex">            
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Create new post</button>
+          <div class="dropdown ms-2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear pe-1"></i></button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy & data</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </form>
+      </nav>
+
+      <!--MODAL-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Caption:</label>
+                  <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here."></textarea>
+                  <div class="mt-3">
+                    <button class="btn btn-outline-secondary" type="button" aria-expanded="false"><i class="fa-solid fa-camera"></i></button>
+                    <button class="btn btn-outline-secondary" type="button" aria-expanded="false"><i class="fa-solid fa-location-dot"></i></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--TOGGLE PILLS-->
+      <nav>
+        <div class="nav nav-tabs justify-content-center my-3" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </div>
+      </nav>
+
+      <div class="tab-content" id="nav-tabContent">
+        <!--GRID VIEW-->
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="row mx-2 p-2">
+            <div class="col-4 img-fluid">
+              <img src="https://www.stylishtraveltips.com/wp-content/uploads/2015/11/Heidelberg-Cover.jpg" class="mt-1 object-fit-cover" width="100%" height="350" alt="Heidelberg castle and bridge lit up at night">
+            </div>
+            <div class="col-4 img-fluid">
+              <img src="https://th.bing.com/th/id/R.ee7c2006a04d0ca6fdc7397106a30d7e?rik=BT34Ox5WkpBhMg&pid=ImgRaw&r=0" class="mt-1 object-fit-cover" width="100%" height="350" alt="London at night">
+            </div>
+            <div class="col-4 img-fluid">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/brighton-pier-sunset-royalty-free-image-1072651396-1562922946.jpg" class="mt-1 object-fit-cover" width="100%" height="350" alt="Brighton pier at dusk">
+            </div>
+          </div>
+
+          <div class="row mx-2 mt-1 p-2">
+            <div class="col-4 img-fluid">
+              <img src="https://i1.wp.com/www.worldwanderista.com/wp-content/uploads/2016/10/Algarve-Portugal-8.jpg?fit=2000%2C1333&ssl=1" class="mt-1 object-fit-cover" width="100%" height="350" alt="Beach surrounded by rock formations">
+            </div>
+            <div class="col-4 img-fluid">
+              <img src="https://www.urlaubsguru.de/wp-content/uploads/2016/07/lucerne-istock_71476543_xlarge-2.jpg" class="mt-1 object-fit-cover" width="100%" height="350" alt="Luzern cityscape reflected in the water">
+            </div>
+            <div class="col-4 img-fluid">
+              <img src="https://th.bing.com/th/id/OIP.S1krbh32VxCmXOTCNijGUQHaEK?rs=1&pid=ImgDetMain" class="mt-1 object-fit-cover" width="100%" height="350" alt="Overview of Bern contoured by the river Aare">
+            </div>
+          </div>
+
+          <div class="row mx-2 my-1 p-2">
+            <div class="col-4 img-fluid">
+              <img src="https://lp-cms-production.imgix.net/2021-06/GettyRF_543346423.jpg?w=600&h=400" class="mt-1 object-fit-cover" width="100%" height="350" alt="Overview of Venice">
+            </div>
+            <div class="col-4 img-fluid">
+              <img src="https://www.feelporto.com/blog/wp-content/uploads/2021/07/28_visitar-Porto.jpg" class="mt-1 object-fit-cover" width="100%" height="350" alt="Overview of Porto and the river Douro">
+            </div>
+            <div class="col-4 img-fluid">
+              <img src="https://www.grayline.com/wp-content/uploads/2023/05/Old-Town-48-Hours-in-Zurich-Things-to-do-in-Zurich-Things-to-do-Switzerland-with-Gray-Line-scaled.jpg" class="mt-1 object-fit-cover" width="100%" height="350" alt="Zurich port under a blue sky">
+            </div>
+          </div>
+
+
+        </div>
+
+        <!--CARD VIEW-->
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <div class="card" style="width: 30rem;">
+            <div class="card-header d-flex">
+              <h5 class="card-title mt-2">Heidelberg in the evening</h5>
+              <p class="card-date mt-2">09/05</p>
+            </div>
+            <img src="https://www.stylishtraveltips.com/wp-content/uploads/2015/11/Heidelberg-Cover.jpg" class="card-img-top" alt="Heidelberg castle and bridge lit up at night">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>14,500 likes</strong><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit alias non, repellendus cum a, consequuntur dignissimos necessitatibus blanditiis nostrum eaque. Obcaecati quas ratione provident labore, dolorem impedit tempora ipsa?</p>
+            </div>
+          </div>
+          <div class="card" style="width: 30rem;">
+            <div class="card-header d-flex">
+              <h5 class="card-title mt-2">London bathed in moonlight</h5>
+              <p class="card-date mt-2">08/05</p>
+            </div>
+            <img src="https://th.bing.com/th/id/R.ee7c2006a04d0ca6fdc7397106a30d7e?rik=BT34Ox5WkpBhMg&pid=ImgRaw&r=0" class="card-img-top" alt="London at night">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>49,822 likes</strong><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam voluptate optio expedita ad natus, assumenda eum sapiente impedit, mollitia dolores id debitis. Expedita aspernatur quam recusandae iusto at culpa!</p>
+            </div>
+          </div>
+          <div class="card" style="width: 30rem;">
+            <div class="card-header d-flex">
+              <h5 class="card-title mt-2">Brighton pier at dusk</h5>
+              <p class="card-date mt-2">07/05</p>
+            </div>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/brighton-pier-sunset-royalty-free-image-1072651396-1562922946.jpg" class="card-img-top" alt="Brighton pier at dusk">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>52,434 likes</strong><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed nihil rem quod ullam repellat, iste beatae. Est ut esse ad laboriosam? Culpa enim eos veniam quisquam voluptatum molestiae aspernatur accusamus?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
